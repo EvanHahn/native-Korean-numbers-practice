@@ -1,4 +1,4 @@
-NOTE: This does not apply to jQuery or Jasmine, which I use.
+NOTE: This does not apply to Jasmine or anything in /vendor.
 
 This is free and unencumbered software released into the public domain.
 
