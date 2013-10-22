@@ -33,3 +33,8 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+#answer-input {
+	text-align: center;
+	outline: 0;
+}
