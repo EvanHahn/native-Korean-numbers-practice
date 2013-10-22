@@ -33,3 +33,16 @@ var getKorean = (function() {
 	};
 
 })();
+
+var random = (function() {
+
+	var MIN = 1;
+	var MAX = 99;
+
+	var size = MAX - MIN;
+
+	return function random() {
+		return Math.floor(Math.random() * size) + MIN;
+	}
+
+})();
