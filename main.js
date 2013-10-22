@@ -20,6 +20,8 @@ $(document).ready(function() {
 			newQuestion();
 	});
 
+	$question.fitText(.3);
+
 	newQuestion();
 
 });

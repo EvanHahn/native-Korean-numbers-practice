@@ -12,6 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 input, button, textarea {
+	color: inherit;
 	font: inherit;
 }
 
@@ -26,6 +27,8 @@ html {
 	display: table;
 	font-family: Lato, "Segoe UI", Avenir, "Helvetica Neue", Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	color: #fff;
+	background-color: #c60c30;
 }
 
 body {
@@ -34,7 +37,18 @@ body {
 	vertical-align: middle;
 }
 
+#question {
+	font-weight: 900;
+	text-shadow: 1px 1px 0 #003478, 2px 2px 0 #003478, 3px 3px 0 #003478, 4px 4px 0 #003478, 5px 5px 0 #003478;
+}
+
 #answer-input {
+	width: 100%;
 	text-align: center;
+	font-weight: 900;
+	font-size: 36pt;
 	outline: 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px dotted #003478;
 }
