@@ -20,11 +20,14 @@ $(document).ready(function() {
 		}, 1000);
 	}
 
-	$answerInput.on('keyup', function() {
+	function checkAnswer() {
 		var yourAnswer = $.trim($answerInput.val());
 		if (yourAnswer === rightAnswer)
 			newQuestion();
-	});
+	}
+
+	$answerInput.on('keyup', checkAnswer);
+	setInterval(checkAnswer, 1000);
 
 	$question.fitText(.3);
 
