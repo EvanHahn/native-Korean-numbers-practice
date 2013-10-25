@@ -2,7 +2,7 @@ var getKorean = (function() {
 
 	var ONES = [
 		'', // nothing in the ones place
-		'한나',
+		'하나',
 		'둘',
 		'셋',
 		'넷',

@@ -1,7 +1,7 @@
 describe('getKorean', function() {
 
 	it('converts 1 through 9', function() {
-		expect(getKorean(1)).toEqual('한나');
+		expect(getKorean(1)).toEqual('하나');
 		expect(getKorean(2)).toEqual('둘');
 		expect(getKorean(3)).toEqual('셋');
 		expect(getKorean(4)).toEqual('넷');
@@ -17,7 +17,7 @@ describe('getKorean', function() {
 	});
 
 	it('converts 11 through 19', function() {
-		expect(getKorean(11)).toEqual('열한나');
+		expect(getKorean(11)).toEqual('열하나');
 		expect(getKorean(12)).toEqual('열둘');
 		expect(getKorean(13)).toEqual('열셋');
 		expect(getKorean(14)).toEqual('열넷');
@@ -40,7 +40,7 @@ describe('getKorean', function() {
 	});
 
 	it('converts 21', function() {
-		expect(getKorean(21)).toEqual('스물한나');
+		expect(getKorean(21)).toEqual('스물하나');
 	});
 
 	it('converts 69', function() {
