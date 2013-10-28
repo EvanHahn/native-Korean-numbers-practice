@@ -22,7 +22,7 @@ $(document).ready(function() {
 		$body.addClass('good');
 		setTimeout(function() {
 			$body.removeClass('good');
-		}, 1000);
+		}, 500);
 		newQuestion();
 	}
 
