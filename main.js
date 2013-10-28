@@ -37,6 +37,10 @@ $(document).ready(function() {
 
 	$question.fitText(.3);
 
+	$(window).on('click', function() {
+		$answerInput.focus();
+	});
+
 	newQuestion();
 
 });
