@@ -4,10 +4,15 @@ $(document).ready(function() {
 	var $question = $('#question');
 	var $answerInput = $('#answer-input');
 
+	var currentNumber;
 	var rightAnswer;
 
 	function newQuestion() {
-		var number = random();
+		var number;
+		do {
+			number = random();
+		} while (number === currentNumber);
+		currentNumber = number;
 		rightAnswer = getKorean(number);
 		$question.html(number);
 		$answerInput.val('').focus();
@@ -18,12 +23,13 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$body.removeClass('good');
 		}, 1000);
+		newQuestion();
 	}
 
 	function checkAnswer() {
 		var yourAnswer = $.trim($answerInput.val());
 		if (yourAnswer === rightAnswer)
-			newQuestion();
+			answerRight();
 	}
 
 	$answerInput.on('keyup', checkAnswer);
