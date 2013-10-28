@@ -2,7 +2,7 @@ describe('random', function() {
 
 	var TEST_TRIES = 1000;
 
-	it('generates random numbers between 1 and 99', function() {
+	it('generates random integers between 1 and 99', function() {
 
 		var val;
 
