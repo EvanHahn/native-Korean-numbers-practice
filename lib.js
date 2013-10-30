@@ -29,7 +29,10 @@ var getKorean = (function() {
 	return function getKorean(n) {
 		var tens = Math.floor(n / 10);
 		var ones = n - (tens * 10);
-		return TENS[tens] + ONES[ones];
+		if (ones && tens)
+			return TENS[tens] + ' ' + ONES[ones];
+		else
+			return TENS[tens] + ONES[ones];
 	};
 
 })();
